@@ -1,0 +1,119 @@
+body {
+      background-color: rgb(223, 216, 206);
+      margin: 0;
+    }
+
+    h1 {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-left: 600px;
+      font-weight: 200;
+    
+      color:rgb(249, 42, 42);
+    }
+
+    .head {
+      background-color: rgb(72, 74, 73);
+    }
+
+    ul {
+      display: flex;
+      padding-left: 0;
+    }
+
+    li a {
+      display: block;
+      color: black;
+      padding: 10px 13px;
+      text-decoration: none;
+    }
+
+    .nav {
+      display: flex;
+      background-color: rgb(66, 71, 69);
+    }
+
+    li a:hover {
+      color: rgb(230, 30, 23);
+      background-color: rgb(172, 177, 177);
+    }
+
+    .aret {
+      font-family: 'Times New Roman', Times, serif;
+      margin-top: 20px;
+      font-size: 30px;
+      padding: 20px;
+      color: black;
+      background-color: grey;
+    }
+
+    .container {
+      width: 70%;
+      height: 450px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 100px auto 0 auto;
+      
+      border-radius: 20px;
+      padding: 20px;
+    }
+
+    .container figure {
+      position: relative;
+      margin: 0;
+      width: 15%;
+      height: 100%;
+      overflow: hidden;
+      border-radius: 10px;
+      border: 2px solid rgba(255, 255, 255, 0.6);
+      transition: all ease-in-out 0.5s;
+    }
+
+    .container figure:hover {
+      width: 70%;
+    }
+
+    .container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .container figcaption {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      text-align: center;
+      font-size: 18px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .container figure:hover figcaption {
+      opacity: 1;
+    }
+
+    .list1 {
+      display: none;
+    }nav {
+    margin-top: 20px;
+}
+
+.nav-link {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: rgb(83, 78, 75);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.nav-link:hover {
+    background-color: rgb(221, 75, 7);
+}

@@ -1,0 +1,80 @@
+<div class="nav">
+  <a routerLink="/main" class="nav-link">Home</a>
+</div>
+
+<div class="form-container">
+  <h1 class="form-title">AIR Estate Inquiry Form</h1>
+  <p class="form-description">Please fill out the form below to submit your inquiry.</p>
+
+  <form (ngSubmit)="onSubmit()" #inquiryForm="ngForm">
+    <!-- Name -->
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        [(ngModel)]="formData.name"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+
+    <!-- Phone -->
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        [(ngModel)]="formData.phone"
+        placeholder="Enter your phone number"
+        required
+      />
+    </div>
+
+    <!-- Date -->
+    <div class="form-group">
+      <label for="date">Date:</label>
+      <input
+        type="date"
+        id="date"
+        name="date"
+        [(ngModel)]="formData.date"
+        required
+      />
+    </div>
+
+    <!-- Variation -->
+    <div class="form-group">
+      <label for="variation">Variation:</label>
+      <select
+        id="variation"
+        name="variation"
+        [(ngModel)]="formData.variation"
+        required
+      >
+        <option value="" disabled selected>Select a variation</option>
+        <option value="sea">Sea</option>
+        <option value="forest">Forest</option>
+        <option value="hill">Hill</option>
+      </select>
+    </div>
+
+    <!-- Estate Name -->
+    <div class="form-group">
+      <label for="estateName">Estate Name:</label>
+      <input
+        type="text"
+        id="estateName"
+        name="estateName"
+        [(ngModel)]="formData.estateName"
+        placeholder="Enter the estate name"
+        required
+      />
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="submit-button">Submit</button>
+  </form>
+</div>
